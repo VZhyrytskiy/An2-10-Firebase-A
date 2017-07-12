@@ -1,17 +1,19 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 
-import { RetrivingObjectComponent } from '.';
+import { RetrivingObjectComponent, RetrivingListComponent } from '.';
 
 @NgModule({
   declarations: [
-    RetrivingObjectComponent
+    RetrivingObjectComponent,
+    RetrivingListComponent
   ],
   imports: [
     CommonModule,
   ],
   exports: [
-    RetrivingObjectComponent
+    RetrivingObjectComponent,
+    RetrivingListComponent
   ]
 })
 export class ComponentsModule { }
