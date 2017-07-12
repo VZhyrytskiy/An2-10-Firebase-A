@@ -3,8 +3,8 @@ import { AngularFireDatabase, FirebaseObjectObservable } from 'angularfire2/data
 
 @Component({
   selector: 'app-retriving-object',
-  templateUrl: './01-retriving-object.component.html',
-  styleUrls: ['./01-retriving-object.component.css']
+  templateUrl: './retriving-object.component.html',
+  styleUrls: ['./retriving-object.component.css']
 })
 export class RetrivingObjectComponent implements OnInit {
   item: FirebaseObjectObservable<any>;
