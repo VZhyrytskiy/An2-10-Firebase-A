@@ -1,0 +1,11 @@
+<section>
+  <h2>Retriving Object</h2>
+
+  <p>{{ (item | async)?.name }}, {{(item | async)?.size}}</p>
+  <input type="text" #newname placeholder="Name" />
+  <input type="text" #newsize placeholder="Size" />
+  <br />
+  <button (click)="save(newname.value)">Set Name</button>
+  <button (click)="update(newsize.value)">Update Size</button>
+  <button (click)="delete()">Delete</button>
+</section>

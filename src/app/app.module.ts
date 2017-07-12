@@ -10,6 +10,7 @@ import { AngularFireAuthModule } from 'angularfire2/auth';
 import { firebaseConfig } from './common/firebase.config';
 
 import { AppComponent } from './app.component';
+import { ComponentsModule } from './components';
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import { AppComponent } from './app.component';
     BrowserModule,
     FormsModule,
     HttpModule,
+    ComponentsModule,
 
     // firebase initialization
     AngularFireModule.initializeApp(firebaseConfig),
