@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
+// Firebase Modules and Configuration
 import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
 import { AngularFireAuthModule } from 'angularfire2/auth';
@@ -16,11 +17,15 @@ import { AppComponent } from './app.component';
   ],
   imports: [
     BrowserModule,
-    AngularFireModule.initializeApp(firebaseConfig),
-    AngularFireDatabaseModule,  // imports firebase/database, only needed for database features
-    AngularFireAuthModule,      // imports firebase/auth, only needed for auth features
     FormsModule,
-    HttpModule
+    HttpModule,
+
+    // firebase initialization
+    AngularFireModule.initializeApp(firebaseConfig),
+    // imports firebase/database, only needed for database features
+    AngularFireDatabaseModule,
+    // imports firebase/auth, only needed for auth features
+    AngularFireAuthModule
   ],
   bootstrap: [AppComponent]
 })
