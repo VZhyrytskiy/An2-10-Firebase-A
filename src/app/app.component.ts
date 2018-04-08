@@ -9,6 +9,7 @@ import { AngularFireDatabase } from 'angularfire2/database';
 export class AppComponent {
   title = 'app works!';
 
-  constructor(db: AngularFireDatabase) {
+  constructor(private db: AngularFireDatabase) {
+    this.db.object('/item').subscribe(data => console.log(data));
   }
 }
